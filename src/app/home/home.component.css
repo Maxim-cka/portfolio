@@ -1,0 +1,40 @@
+.p-profile{
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(/assets/img/myself.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 35rem;
+  position: absolute;
+  top: 300px;
+  left: 1900px;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+  display: block;
+}
+
+.col-sm-7 {
+  /*position: relative;*/
+  /*top: 315px;*/
+  font-size: 4rem;
+  position: relative;
+  top: 315px;
+
+  /*float: left;*/
+  /*display:inline;*/
+  /*width: 49%;*/
+}
+
+@keyframes morph {
+  0%{
+    border-radius: 60% 40% 78% 22% / 23% 77% 23% 77%;
+  }
+  50%{
+    border-radius: 33% 67% 34% 66% / 78% 18% 82% 22%;
+  }
+  100%{
+    border-radius: 60% 40% 78% 22% / 23% 77% 23% 77%;
+  }
+}
